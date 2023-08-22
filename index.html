@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatacuties</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <h1>Flatacuties</h1>
+    </div>
+    <div class="character-buttons">
+      <button  class="character-btn" data-character-id="1">Mr. Cute</button>
+      <button  class="character-btn" data-character-id="2">Mx. Monkey</button>
+      <button  class="character-btn" data-character-id="3">Ms. Zebra</button>
+      <button  class="character-btn" data-character-id="4">Dr. Lion</button>
+      <button  class="character-btn" data-character-id="5">Mme. Panda</button>
+    </div>
+  </div>
+  
+  <div class="characterInfo" id="output">
+    <div id="detailed-info">
+      <p id="name">Character's Name</p>
+      <img id="image" src="assets/dummy.gif" alt="Character's Name" />
+      <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
+      <form id="votes-form">
+        <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
+        <input type="submit" value="Add Votes" />
+      </form>
+      <button id="reset-btn">Reset Votes</button>
+    </div>
+  </div>
+  
+  <script src="src/index.js"></script>
+</body>
+</html>
